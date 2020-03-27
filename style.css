@@ -1,0 +1,493 @@
+/*
+Theme Name: Narmada Lite
+Theme URI: https://lombokmedia.web.id/narmada
+Description: Custom CMS Based on WordPress by LombokMedia
+Author: Amrin Zulkarnain
+Author URI: http://amrinz.wordpress.com
+Version: 1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Tags: Custom Logo, Custom Menu, Featured Images, One Column, Two Columns, Right Sidebar, Left Sidebar, Theme Options
+Text Domain: lombokmedia
+*/
+
+body {
+	font-family:Montserrat,sans-serif;
+	font-size:14px;
+	font-weight:300;
+	line-height: 26px;
+	background-color: #f6f6f6;
+	color: #818181;
+}
+
+a, a:focus {
+	color: #303030;
+}
+
+a:hover, a:active { 
+	color: #1abc9c;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #303030;
+}
+
+blockquote {
+	margin-left: 20px;
+    padding-left:20px;
+	border-left: 5px solid #dadada;
+}
+
+.container {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+/* match height */
+.match-height {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.match-height .col-match-height {
+	display: flex;
+	flex-direction: column;
+}
+
+
+/*** Header ***/
+.navbar-brand img {
+	max-height: 36px;
+	width: auto;
+}
+
+/* navbar */
+.lmd-navbar .container {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.navbar-toggler {
+	border: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #9d9d9d;
+	text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .current-menu-item .nav-link {
+	color: #262626;
+}
+
+.dropdown-menu {
+    padding: .5rem 0;
+    margin: .5rem 0 0;
+    text-align: left;
+    background-color: #262626;
+	border-color: #3d3d3d;
+    border-radius: 0;
+}
+
+.dropdown-item {
+	font-weight: 600;
+	color: #9d9d9d;
+	line-height: 16px;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.dropdown-item:hover {
+	color: #ffffff;
+	background-color: transparent;
+}
+
+/***** Posts *****/
+.page-header {
+	margin-bottom: 2em;
+}
+.page-header h1 {
+	text-transform: uppercase;
+	font-size: 1.8em;
+}
+
+.post {
+	background: #f6f6f6;
+	margin-bottom: 2em;
+}
+
+.post-thumbnail {
+	text-align: center;
+}
+
+.post-thumbnail img {
+	display: block;
+	margin: 0 auto;
+}
+
+.post-thumbnail img:hover {
+	opacity: 0.9;
+}
+
+.post-header, .post-body {
+	background: #ffffff;
+	padding: 15px;
+}
+
+.post-title {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #303030;
+}
+
+.single .post-title, .page .post-title {
+	font-size: 1.8em;
+}
+
+.post-meta.post-date {
+	padding-top: 10px;
+}
+
+.post-meta {
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+	font-weight: 400;
+}
+
+.post-body {
+	padding-top: 1px;
+}
+
+/*PostImage*/
+.alignleft,img.alignleft {
+	display:inline;
+	float:left;
+	margin-right:10px;
+}
+
+.alignright,img.alignright {
+	display:inline;
+	float:right;
+	margin-left:10px;
+}
+
+.aligncenter,img.aligncenter{
+	clear:both;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+img.alignleft,img.alignright,img.aligncenter{
+	margin-bottom:10px;
+}
+
+.wp-caption{
+	margin-bottom:10px;
+	max-width:100% !important;
+}
+
+.wp-caption .wp-caption-text{
+	font-size:10px;
+	margin:10px;
+	text-align:center;
+}
+
+/* WordPress Gallery */
+.gallery .gallery-item {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 5px 10px;
+	text-align: center;
+}
+.gallery .gallery-item img, .sh_post img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+.gallery-columns-2 .gallery-item {
+	width: 50%;
+}
+.gallery-columns-3 .gallery-item, .sh_post_col_3 {
+	width: 33.33333333333333%;
+}
+.gallery-columns-4 .gallery-item {
+	width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+	width: 20%;
+}
+.gallery-columns-6 .gallery-item {
+	width: 16.66666666666667%;
+}
+.gallery-columns-7 .gallery-item {
+	width: 14.28571428571429%;
+}
+.gallery-columns-8 .gallery-item {
+	width: 12.5%;
+}
+.gallery-columns-9 .gallery-item {
+	width: 11.11111111111111%;
+}
+
+.gallery-caption {
+	font-size: smaller;
+}
+
+/*** Sidebar ***/
+/* Widgets */
+.widget{
+	margin-bottom:30px;
+}
+
+.widget-title {
+	text-transform: uppercase;
+	font-size: 14px;
+	margin: 0 0 15px 0;
+	padding: 0;
+	font-weight: 600;
+}
+
+.widget ul, .fwidget ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.widget li{
+	margin:0;
+	padding:0 0 10px 0;
+}
+
+.widget ul ul{
+	margin:0;
+	padding:10px 0 0 20px;
+}
+
+/* widget search */
+.widget.widget-search .widget-title { 
+	font-size: 12px;
+}
+
+.widget.widget_product_search .woocommerce-product-search input[type=search], .widget.widget_product_search .woocommerce-product-search input[type=submit], .search-form .form-control, .search-form .btn, .widget .search-form .form-control, .widget .search-form .btn{
+	border: 1px solid #e7e7e7;
+    border-radius: 0;
+    height: 40px;
+    padding: 5px 15px;
+    box-shadow: none;
+}
+
+/**Calendar**/
+table#wp-calendar{
+	width:100%;
+}
+
+table caption {
+	font-weight:bold;
+	text-align:center;
+	padding-bottom:5px;
+}
+
+#widget-footer table caption {
+	color:#fff;
+}
+
+table#wp-calendar td#prev {
+	text-align:left;
+	padding-left:3px;
+}
+
+table#wp-calendar td#next {
+	text-align:right;
+	padding-right:3px;
+}
+
+table#wp-calendar th, table#wp-calendar td {
+	text-align:center;
+	border:1px solid #ccc;
+}
+
+/* Footer */
+.footer {
+	background: #1B1B1B;
+}
+
+.footer .container {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.footer a {
+	color: #ffffff;
+}
+
+.footer a:hover {
+	color: #1abc9c;
+}
+.copyright {
+	text-align: center;
+	font-size: smaller;
+}
+
+/* Error 404 */
+#post-404.post {
+	text-align: center;
+	padding-top: 4em;
+	padding-bottom: 3em;
+}
+#post-404.post p {
+	margin: 0;
+	padding: 0;
+}
+#post-404.post .post-title {
+	font-size: 5em;
+	margin: 0;
+	padding: 0;
+}
+
+/* Comments */
+.comments-title {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.comment-list {
+	background: #ffffff;
+	margin: 0 0 2em 0;
+	padding: 20px;
+	list-style-type: none;
+}
+
+.children {
+	margin-top: 1em;
+	list-style-type: none;
+}
+
+.comment-list li.comment {
+	margin-bottom: 20px;
+}
+
+
+.comment-meta {
+	margin-bottom: 10px;
+}
+.avatar {
+	float: left;
+	margin-right: 10px;
+}
+.comment-metadata {
+	font-size: smaller;
+}
+
+.comment-reply-link {
+	padding: 7px 20px;
+	border: 2px solid #1B1B1B;
+}
+
+.comment-reply-link:hover {
+	background-color: #1abc9c;
+	border-color: #1abc9c;
+	color: #ffffff;
+}
+
+/* Posts Navigation */
+.navigation:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.navigation-single {
+	font-size: 1.3em;
+}
+
+.prev-posts {
+	float: left;
+	width: 48%;
+	text-align: left;
+}
+
+.next-posts {
+	float: right;
+	width: 48%;
+	text-align: right;
+}
+
+/* Pagination */
+.page-link, .page-link:focus {
+    color: #282828;
+    background-color: #fff;
+	border: 1px solid #dee2e6;
+	box-shadow: none;
+}
+
+.page-item.active .page-link, .page-link:hover {
+    color: #ffffff;
+    background-color: #1abc9c;
+    border: 1px solid #dee2e6;
+}
+
+/* comment form */
+#commentform input, #commentform textarea {
+	border-color: #e7e7e7;
+    border-radius: 0;
+	box-shadow: none;
+}
+
+#commentform input:focus, #commentform textarea:focus {
+	border-color: #1abc9c;
+}
+
+#commentform .btn-send-comment {
+	background: transparent;
+	color: #1B1B1B;
+	border: 2px solid #1B1B1B;
+	box-shadow: none;
+	padding: 1em 3em;
+}
+#commentform .btn-send-comment:hover {
+	background: #1abc9c;
+	color: #ffffff;
+	border-color: #1abc9c;
+}
+
+/*BacktoTop*/
+.back-to-top{
+	position:fixed;
+	bottom:2em;
+	right:2em;
+	text-decoration:none;
+	color:#B0B0B0;
+	background-color: transparent;
+	border: 2px solid #B0B0B0;
+	font-size:12px;
+	padding:0.5em 1em;
+}
+.back-to-top:hover{
+	background-color: #B0B0B0; 
+	color: #ffffff;
+}
+
+/**** Media Queries ***************************************************************************************************************/
+@media (min-width: 768px) { 
+
+}
+
+@media (min-width: 1200px) { 
+
+ }

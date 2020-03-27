@@ -1,0 +1,1 @@
+<?php lmd_page_navi(); ?>
